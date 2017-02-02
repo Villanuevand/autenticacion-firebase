@@ -1,3 +1,5 @@
-/**
- * Created by avillanueva on 2/2/17.
- */
+'use strict';
+
+const _ar = () => {
+    console.log('.ar');
+};
