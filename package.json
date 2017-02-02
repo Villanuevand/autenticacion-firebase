@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/Villanuevand/autenticacion-firebase/issues"
   },
-  "homepage": "https://github.com/Villanuevand/autenticacion-firebase#readme"
+  "homepage": "https://github.com/Villanuevand/autenticacion-firebase#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.4.0"
+  }
 }
