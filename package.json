@@ -1,0 +1,24 @@
+{
+  "name": "autenticacion-firebase",
+  "version": "1.0.0",
+  "description": "Autenticacion con Firebase ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Villanuevand/autenticacion-firebase.git"
+  },
+  "keywords": [
+    "firebase",
+    "autenticacion",
+    "villanuevand"
+  ],
+  "author": "Andrés Villanueva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Villanuevand/autenticacion-firebase/issues"
+  },
+  "homepage": "https://github.com/Villanuevand/autenticacion-firebase#readme"
+}
