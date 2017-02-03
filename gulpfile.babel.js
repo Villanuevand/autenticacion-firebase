@@ -17,7 +17,7 @@ gulp.task('bundleJs', () => {
 gulp.task('server', () => {
     browserSync.init({
         open: false,
-        port: 3001,
+        port: 6500,
         reloadOnRestart: true,
         server: './app',
         ui: false
