@@ -1,5 +1,10 @@
 'use strict';
 
-const _ar = () => {
-    console.log('.ar');
+const config =  require('./firebaseConfig').config;
+
+const initApp = () => {
+    firebase.initializeApp(config);
 };
+
+// Initialize Firebase
+initApp();
