@@ -1,5 +1,6 @@
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const plugins  = [
     new BrowserSyncPlugin({
@@ -9,6 +10,11 @@ const plugins  = [
         port: 5000,
         server: { baseDir: ['./app'] }
     }),
+    new CleanWebpackPlugin(['./app/dist'], {
+        root: path.resolve(__dirname , '..'),
+        verbose: true,
+        dry: false
+    })
 ];
 
 const config = {
