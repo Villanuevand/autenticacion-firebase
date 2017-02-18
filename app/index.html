@@ -11,6 +11,15 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.deep_orange-blue.min.css"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .panel-buttons { margin: 100px 0; }
+        .active-user { display:none}
+        #twitter  { background: #1da1f2;}
+        #facebook { background: #4267b2}
+        #google { brackgroud: red}
+        #github {background: #24292e}
+    </style>
 </head>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -24,28 +33,41 @@
             </div>
         </header>
         <main class="mdl-layout__content">
+
             <div class="page-content">
                 <!-- Your content goes here -->
-                <h2>Autenticación con Firebase</h2>
-                <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--4-col"></div>
-                    <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-grid panel-buttons">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h4>Elige una de las siguientes redes sociales para tú autenticación:</h4>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
 
-                        <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-button--colored" id="twitter">
-                            Twitter
-                        </button>
                         <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-button--colored" id="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
                             Facebook
                         </button>
-                        <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect  mdl-button--colored" id="google">
-                            Google
+                        <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-button--colored" id="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            Twitter
                         </button>
                         <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-button--colored" id="github">
+                            <i class="fa fa-github" aria-hidden="true"></i>
                             Github
                         </button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect  mdl-button--colored" id="google">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                            Google
+                        </button>
+
                     </div>
+                </div>
+                <div class="mdl-grid active-user">
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                    <div class="mdl-cell mdl-cell--4-col"></div>
                     <div class="mdl-cell mdl-cell--4-col"></div>
                 </div>
+
+
 
 
             </div>
