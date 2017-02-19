@@ -106,6 +106,41 @@ export function twitterAuth () {
 
 }
 
+export function facebookAuth () {
+    "use strict";
+    if (!firebase.auth().currentUser) {
+        const provider = new firebase.auth.FacebookAuthProvider();
+        provider.addScope('public_profile');
+        firebase.auth().signInWithPopup(provider)
+            .then((result) => {
+                console.log('facebookAuth OK');
+                let token = result.credential.accessToken;
+                let user = result.user;
+                showUserData('facebook',user,token);
+            })
+            .catch((error) => {
+                console.log('facebookAuth Fail');
+                // Handle Errors here.
+                let errorCode = error.code;
+                let errorMessage = error.message;
+                // The email of the user's account used.
+                let email = error.email;
+                // The firebase.auth.AuthCredential type that was used.
+                let credential = error.credential;
+
+                console.log('errorCode ',errorCode );
+                console.log('errorMessage ',errorMessage );
+                console.log('email ',email );
+                console.log('credential ',credential );
+                // ...
+            });
+    } else {
+        console.log('something is wrong');
+        signOut();
+    }
+
+}
+
 function showUserData (platform,user,token) {
     "use strict";
     console.log('Platform', platform);
