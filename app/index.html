@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .panel-buttons { margin: 100px 0; }
-        .active-user { display:none}
+        #login { margin: 100px 0; display: block }
+        #active-user { display:none}
         #twitter  { background: #1da1f2;}
         #facebook { background: #4267b2}
-        #google { brackgroud: red}
+        #google { background: #db4437}
         #github {background: #24292e}
     </style>
 </head>
@@ -36,12 +36,12 @@
 
             <div class="page-content">
                 <!-- Your content goes here -->
-                <div class="mdl-grid panel-buttons">
-                    <div class="mdl-cell mdl-cell--6-col">
-                        <h4>Elige una de las siguientes redes sociales para tú autenticación:</h4>
-                    </div>
+                <div class="mdl-grid panel-buttons" id="login">
                     <div class="mdl-cell mdl-cell--6-col">
 
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <h4>Elige una de las siguientes redes sociales para tú autenticación:</h4>
                         <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-button--colored" id="facebook">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             Facebook
@@ -61,14 +61,28 @@
 
                     </div>
                 </div>
-                <div class="mdl-grid active-user">
-                    <div class="mdl-cell mdl-cell--4-col"></div>
-                    <div class="mdl-cell mdl-cell--4-col"></div>
+                <div class="mdl-grid panel-buttons" id="active-user">
+                    <div class="mdl-cell mdl-cell--4-col">&nbsp;</div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h5  class="mdl-card__title-text" id="userName"></h5>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <p id="userEmail"></p>
+                            </div>
+                            <img  id="userImage" alt="user-active" width="330">
+                            <div class="mdl-card__actions mdl-card--border">
+
+                            </div>
+
+                        <button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-button--colored" id="logout">
+                            Cerrar Sesión
+                        </button>
+                        </div>
+                    </div>
                     <div class="mdl-cell mdl-cell--4-col"></div>
                 </div>
-
-
-
 
             </div>
 
